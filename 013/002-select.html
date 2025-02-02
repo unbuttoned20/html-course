@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-013</title>
+</head>
+
+<body>
+    <!-- Выбор из нескольких опций -->
+    <label for="cite">Ваш город:</label>
+    <select name="user-city" id="city">
+        <option value="moscow">Москва</option>
+        <option value="petersburg">Санкт-Петербург</option>
+        <option value="ekaterinburg">Екатеринбург</option>
+        <option value="samara">Самара</option>
+        <!--  -->
+    </select>
+
+    <!-- Выбор нескольких ответов -->
+    <label for="cite">Ваш город:</label>
+    <select name="user-city" id="city" multiple>
+        <option value="moscow">Москва</option>
+        <option value="petersburg">Санкт-Петербург</option>
+        <option value="ekaterinburg">Екатеринбург</option>
+        <option value="samara">Самара</option>
+        <!--  -->
+    </select>
+
+    <!-- Выбор по умолчанию -->
+    <label for="cite">Ваш город:</label>
+    <select name="user-city" id="city">
+        <option value="moscow">Москва</option>
+        <option value="petersburg" selected>Санкт-Петербург</option>
+        <option value="ekaterinburg">Екатеринбург</option>
+        <option value="samara">Самара</option>
+        <!--  -->
+    </select>
+
+    <!-- Правильное исполнение -->
+    <label for="cite">Ваш город:</label>
+    <select name="user-city" id="city" required>
+        <option value="" selected disabled>Не выбрано</option>
+        <option value="moscow">Москва</option>
+        <option value="petersburg">Санкт-Петербург</option>
+        <option value="ekaterinburg">Екатеринбург</option>
+        <option value="samara">Самара</option>
+        <!--  -->
+    </select>
+</body>
+
+</html>
