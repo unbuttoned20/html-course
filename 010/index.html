@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-010</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>
+            <h2>Самопроверка из Интернета</h2>
+        </caption>
+        <thead>
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="3">Seminar</th>
+            </tr>
+            <tr>
+                <th colspan="2">Schedule</th>
+                <th rowspan="2">Topic</th>
+            </tr>
+            <tr>
+                <th>Begin</th>
+                <th>End</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8:00 a.m.</td>
+                <td rowspan="2">5:00 p.m.</td>
+                <td>Introduction to XML</td>
+            </tr>
+            <tr>
+                <td>Validity: DTD and Relax NG</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Tuesday</td>
+                <td>8:00 a.m.</td>
+                <td>11:00 a.m.</td>
+                <td rowspan="3">
+                    <table style="width: 100%; height: 70px;">
+                        <tr style="border: 0px solid rgb(255, 255, 255);">
+                            <td style="border: 0px solid rgb(255, 255, 255);">XPath</td>
+                        </tr>
+                        <tr style="border: 0px solid rgb(255, 255, 255);border-top: 1px solid rgb(0, 0, 0);">
+                            <td style="border: 0px solid rgb(255, 255, 255);border-top: 1px solid rgb(0, 0, 0);">XML Transformations</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>11:00 a.m.</td>
+                <td>2:00 p.m.</td>
+            </tr>
+            <tr>
+                <td>2:00 p.m.</td>
+                <td>5:00 p.m.</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>8:00 a.m.</td>
+                <td>12:00 p.m.</td>
+                <td>XSL Formating Objects</td>
+            </tr>
+        </tbody>
+    </table>
+    <img src="../static/table.png" alt="table">
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-010</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Объединение ячеек -->
+    <table>
+        <caption>Рассчетный лист услуг ЖКХ</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Вид услуги</th>
+                <th rowspan="2">Ед. изм.</th>
+                <th colspan="2">Объем коммунальных услуг</th>
+                <th rowspan="2">Размер платы</th>
+            </tr>
+            <tr>
+                <th>на индив. потребл.</th>
+                <th>на общедом.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Холодная вода</td>
+                <td>Куб м.</td>
+                <td>3</td>
+                <td>4</td>
+                <td>1000.00</td>
+            </tr>
+            <tr>
+                <!-- ... -->
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Итого к оплате за расчетный период</td>
+                <td colspan="4">9999.00</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Таблица в таблице -->
+     <table>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td>Ячейка внутренней таблицы</td>
+                        <td>Ячейка внутренней таблицы</td>
+                        <td>Ячейка внутренней таблицы</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка внутренней таблицы</td>
+                        <td>Ячейка внутренней таблицы</td>
+                        <td>Ячейка внутренней таблицы</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка внутренней таблицы</td>
+                        <td>Ячейка внутренней таблицы</td>
+                        <td>Ячейка внутренней таблицы</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                Ячейка таблицы
+            </td>
+            <td>
+                Ячейка таблицы
+            </td>
+        </tr>
+     </table>
+</body>
+
+</html>
