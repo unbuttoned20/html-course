@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-012</title>
+</head>
+
+<body>
+    <!-- Разнообразие ввода -->
+
+    <!-- Электронная почта -->
+    <form>
+        <p>
+            <label for="email">Электронная почта:</label>
+            <input id="email" name="user-email" type="email">
+        </p>
+        <p>
+            <button type="submit">Отправить</button>
+        </p>
+    </form>
+
+    <!-- URL-адрес -->
+    <form>
+        <p>
+            <label for="user-profile">
+                Ссылка на профиль в любой соц. сети:
+            </label>
+            <input id="user-profile" name="user-profile" type="url">
+        </p>
+        <p>
+            <button type="submit">Отправить</button>
+        </p>
+    </form>
+
+    <!-- Телефон -->
+    <form>
+        <p>
+            <label for="user-phone">Номер телефона:</label>
+            <input id="user-phone" name="user-phone" type="tel">
+        </p>
+        <p>
+            <button type="submit">Отправить</button>
+        </p>
+    </form>
+
+    <!-- Поисковый запрос -->
+    <form>
+        <p>
+            <label for="search-query">Введите поисковой запрос:</label>
+            <input id="search-query" name="search-query" type="search">
+        </p>
+        <p>
+            <button type="submit">Отправить</button>
+        </p>
+    </form>
+
+
+    <!-- Число -->
+    <form>
+        <p>
+            <label for="user-age">Ваш возраст:</label>
+            <input id="user-age" name="user-age" type="number">
+        </p>
+        <p>
+            <button type="submit">Отправить</button>
+        </p>
+    </form>
+
+    <!-- Пароль -->
+    <form>
+        <p>
+            <label for="user-password">Ваш пароль:</label>
+            <input id="user-password" name="user-password" type="password">
+        </p>
+        <p>
+            <button type="submit">Отправить</button>
+        </p>
+    </form>
+
+    <!-- Цвет -->
+    <form>
+        <p>
+            <label for="prefer-color">Выберите предпочитаемый цвет:</label>
+            <input type="color" id="prefer-color" name="prefer-color">
+        </p>
+    </form>
+
+    <!-- Один и несколько файлов -->
+    <form>
+        <p>
+            <label for="user-document">Прикрепите ваш документ:</label>
+            <input type="file" id="user-document" name="user-document">
+        </p>
+        <p>
+            <label for="user-documents">Прикрепите ваши документы:</label>
+            <input type="file" multiple id="user-documents" name="user-documents">
+        </p>
+        <p>
+            <button type="submit">Отправить</button>
+        </p>
+    </form>
+
+    <!-- Ползунок -->
+    <form>
+        <label for="sound-volume">Громкость звука от 1 до 100</label>
+        <input type="range" id="sound-volume" name="sound-volume" min="1" max="100">
+    </form>
+</body>
+
+</html>
