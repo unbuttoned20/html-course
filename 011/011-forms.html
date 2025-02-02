@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-011</title>
+</head>
+
+<body>
+    <!-- Форма - главный интеракивный элемент любого веб-сайта -->
+
+    <!-- Форма -->
+    <form>
+
+    </form>
+
+    <!-- Обработчик на стороне сервера -->
+    <form action="/some-server-script-path">
+
+    </form>
+
+    <!-- Метод отправки формы -->
+    <form action="/some-server-script-path" method="post">
+
+    </form>
+
+    <!-- Визуальная группировка полей -->
+    <form>
+        <fieldset>
+            Группа полей ввода...
+        </fieldset>
+        <fieldset>
+            Еще одна группа полей ввода...
+        </fieldset>
+        <fieldset>
+            И еще одна группа полей ввода...
+        </fieldset>
+    </form>
+
+    <!-- Заголовок для группы полей -->
+    <form>
+        <fieldset>
+            <legend>Паспортные данные</legend>
+            ...
+        </fieldset>
+        <fieldset>
+            <legend>Работа</legend>
+            ...
+        </fieldset>
+        <fieldset>
+            <legend>Образование</legend>
+            ...
+        </fieldset>
+        <fieldset>
+            <legend>Контакты</legend>
+            ...
+        </fieldset>
+    </form>
+
+    <!-- Метка поля ввода -->
+    <label for="login">Логин:</label>
+
+    <!-- Пользовательское взаимодействие -->
+    <label></label>
+
+    <!-- Ввод с меткой -->
+    <label for="login">Логин:</label>
+    <input id="login" />
+
+    <!-- Имя данных для сервера -->
+    <label for="login">Логин:</label>
+    <input id="login" name="user-login" />
+
+    <!-- Значение по умолчанию -->
+    <label for="review">Ваш отзыв: </label>
+    <input id="review" name="user-review" value="Отлично">
+
+    <!-- Тип ввода -->
+    <label for="login">Логин:</label>
+    <input id="login" name="user-login" type="text" />
+</body>
+
+</html>
