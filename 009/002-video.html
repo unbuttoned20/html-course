@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-009</title>
+</head>
+
+<body>
+    <!-- Видео -->
+    <video src="../static/mp4.mp4"></video>
+
+    <!-- Видеоплеер -->
+    <video src="../static/mp4.mp4" controls></video>
+
+    <!-- Поддержка разных браузеров -->
+    <!-- Фоллбэк -->
+    <video>
+        <source src="../static/mp4.mp4" type="video/mp4">
+        <!-- <source src="../static/webm.webm" type="video/webm"> -->
+        <p>К сожалению, ваш браузер не поддерживает видео</p>
+    </video>
+
+    <!-- Размеры -->
+    <video src="../static/mp4.mp4" controls width="480" height="270"></video>
+    <video src="../static/mp4.mp4" controls width="240" height="135"></video>
+
+    <!-- Автопроигрывание + Без звука (обязательно, кроме YouTube) -->
+    <video src="../static/mp4.mp4" autoplay muted></video>
+
+    <!-- Зацикливание видео -->
+    <video src="../static/mp4.mp4" controls loop></video>
+
+    <!-- Обложка видео -->
+    <video src="../static/mp4.mp4" controls poster="../static/img.jpg"></video>
+
+    <!-- На мобиле видео будет открывать не на весь экран, а в своих стандартных рамках -->
+    <video src="../static/mp4.mp4" playsinline></video>
+</body>
+
+</html>
