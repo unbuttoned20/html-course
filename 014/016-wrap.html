@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-014</title>
+</head>
+
+<body>
+    <!-- Форматирование при отправке на сервер -->
+    <form>
+        <p>
+            <label for="message-soft-wrap">Сообщение (soft wrap)</label>
+            <textarea name="message-soft-wrap" id="message-soft-wrap" wrap="soft">123123123123123123</textarea>
+        </p>
+        <!-- Разделит на строки по cols символов в каждой -->
+        <p>
+            <label for="message-hard-wrap">Сообщение (hard wrap)</label>
+            <textarea name="message-hard-wrap" id="message-hard-wrap" cols="10" wrap="hard">
+                12312312312312312312313
+            </textarea>
+        </p>
+        <p>
+            <button type="submit">Отправить</button>
+        </p>
+    </form>
+</body>
+
+</html>

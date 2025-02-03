@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-014</title>
+</head>
+
+<body>
+    <!-- Регулярное выражение как правило для значения -->
+    <h1>Регистрация</h1>
+    <form>
+        <p>
+            <label for="username">Имя пользователя:</label>
+            <input id="username" name="username" pattern="[a-zA-z]+">
+        </p>
+        <button type="submit">Отправить</button>
+    </form>
+
+    <!-- Изменение предупреждения через JavaScript -->
+    <h1>Регистрация</h1>
+    <form>
+        <p>
+            <label for="username">Имя пользователя:</label>
+            <input id="username" name="username" pattern="[a-zA-z]+"
+                oninvalid="setCustomValidity('Только латинские символы')">
+        </p>
+        <button type="submit">Отправить</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-014</title>
+</head>
+
+<body>
+    <!-- Неактивный элемент или группа элементов -->
+    <!-- Эти данные не отрпавляются на сервер -->
+    <form>
+        <p>
+            <label for="login">Логин:</label>
+            <input id="login" name="user-login" required disabled>
+        </p>
+        <p>
+            <input type="checkbox" id="agreement" name="agreement" value="agreement" required disabled>
+            <label for="agreement">Я согласен со всеми условиями</label>
+        </p>
+        <p>
+            <label for="message">Ваше сообщение:</label>
+            <textarea name="user-message" id="message" required disabled></textarea>
+        </p>
+        <p>
+            <label for="city">Ваш город:</label>
+            <select name="user-city" id="city" required disabled>
+                <option value="" selected disabled></option>
+                <option value="moscow">Москва</option>
+                <option value="petersburg">Санкт-Питербург</option>
+                <!--  -->
+            </select>
+        </p>
+        <p>
+            <label for="area">Ваш район:</label>
+            <select name="user-area" id="area">
+                <option value="center">Центральный</option>
+                <option value="north" disabled>Северный</option>
+                <option value="south">Южный </option>
+            </select>
+        </p>
+        <p>
+            <label for="street">Ваша улица:</label>
+            <select name="user-street" id="street">
+                <optgroup label="Центральный район">
+                    <option value="street-0">Улица 0</option>
+                </optgroup>
+                <optgroup label="Северный район" disabled>
+                    <option value="street-0">Улица 1</option>
+                    <option value="street-0">Улица 2</option>
+                </optgroup>
+                <optgroup label="Южный район">
+                    <option value="street-0">Улица 3</option>
+                    <option value="street-0">Улица 4</option>
+                </optgroup>
+                <!--  -->
+            </select>
+        </p>
+        <!-- Все поля недоступны -->
+        <fieldset disabled>
+            <p>
+                <label for="request-number">Номер обращения:</label>
+                <input id="request-number" name="user-request-number" value="1001">
+            </p>
+            <p>
+                <label for="email">Ваш email:</label>
+                <input id="email" name="user-email" value="aleksander111@m.com">
+            </p>
+        </fieldset>
+        <button type="submit">Send</button>
+    </form>
+</body>
+
+</html>
